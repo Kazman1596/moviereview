@@ -5,11 +5,11 @@ import { HomeIcon, UserIcon, PhoneIcon, InformationCircleIcon } from '@heroicons
 
 const Header = () => {
     return (
-        <div>
-            <div className=''>
+        <div className='bg-gray-700 text-gray-200 flex flex-col items-center p-6 select-none sm:flex-row justify-between'>
+            <div className='flex'>
                 <HeaderIcon Icon={HomeIcon} title="HOME" />
-                <HeaderIcon Icon={UserIcon} title="CONTACT" />
-                <HeaderIcon Icon={PhoneIcon} title="ACCOUNT" />
+                <HeaderIcon Icon={UserIcon} title="ACCOUNT" />
+                <HeaderIcon Icon={PhoneIcon} title="CONTACT" />
                 <HeaderIcon Icon={InformationCircleIcon} title="ABOUT" />
             </div>
             <Image
@@ -17,6 +17,7 @@ const Header = () => {
                 width={100}
                 height={100}
                 alt="logo"
+                className='cursor-pointer active:brightness-110'
             />
         </div>
     );
